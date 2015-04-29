@@ -34,6 +34,10 @@
 	margin-left: 3em;
 }
 
+.answerer-info img {
+  width: 100px;
+}
+
 .result {
 	border: 1px solid black;
 	padding: 5px;

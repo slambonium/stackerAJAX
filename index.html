@@ -9,15 +9,18 @@
 </head>
 <body>
 	<div class="container">
+
 		<div class="intro">
 			<div class="left stack-image"></div>
 			<div class="explanation">
 				<h1>StackOverflow Reputation Builder</h1>
 				<p>This app lets you search by topic for unanswered questions on Stack Overflow to help you build your reputation.  Find unanswered questions for a topic you know about, write quality answers, and watch your reputation go up.</p>
 				<p>Sometimes, you also need some inspiration. This page also lets you search for the top answerers for a tag. If you want to rise to the top ranks for a topic, see how many reputation points you'll need to aim for!</p>
-			</div>
-		</div>
+			</div><!-- end div.explanation -->
+		</div><!-- end div.intro -->
+
 		<hr>
+
 		<div class="stack">	
 			<h3>Get Unanswered Questions</h3>
 			<p>Find unanswered questions by tag. For multiple tags, use a semi-colon to separate.</p>
@@ -30,13 +33,17 @@
 				<input type="text" placeholder="e.g., jQuery" name="answerers" size="30"  required>
 				<input type="submit" value="Submit">
 			</form>
-		</div>
+		</div><!-- end div.stack -->
+
 		<div class="results-container">
 			<div class="search-results"></div>
 			<div class="results"></div>
-		</div>
-	</div>
+		</div><!-- end div.results-container -->
+
+	</div><!-- end div.container -->
+
 	<div class="templates hidden">
+
 		<dl class="result question">
 			<dt>Question</dt>
 				<dd class="question-text"><a href="" target="_blank"></a></dd>
@@ -47,9 +54,28 @@
 			<dt>Asker</dt>
 				<dd class="asker"></dd>
 		</dl>
+
+    <dl class="result answerer">
+      <dt>Answerer</dt>
+        <dd class="answerer-info">
+          <a href="" target="_blank">
+            <figure>
+              <img src="" alt=""><br>
+              <figcaption></figcaption>
+            </figure>
+          </a>
+        </dd>
+      <dt>Score</dt>
+        <dd class="score"></dd>
+      <dt>Reputation</dt>
+        <dd class="reputation"></dd>        
+    </dl>    
+
 		<div class="error">
 			<p>Uh-oh! Something went wrong with your request. Here's what we know:</p>
-		</div>
-	</div>
+		</div><!-- end div.error -->
+
+	</div><!-- end div.templates -->
+
 </body>
 </html>

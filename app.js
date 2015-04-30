@@ -125,7 +125,7 @@ var getUnanswered = function(tags) {
 	var result = $.ajax({
 		/* http://api.jquery.com/jQuery.ajax/ */
 		/* http://api.stackexchange.com/docs/unanswered-questions */
-		url: "http://api.stackexchange.com/2.2/questions/unanswered",
+		url: "//api.stackexchange.com/2.2/questions/unanswered",
 		data: request,
 		dataType: "jsonp",
 		/* http://bob.ippoli.to/archives/2005/12/05/remote-json-jsonp/ */
@@ -166,7 +166,7 @@ var getTopAnswerers = function(tag) {
 		/* http://api.jquery.com/jQuery.ajax/ */
 		/* http://api.stackexchange.com/docs/unanswered-questions */
 		// url: "http://api.stackexchange.com/2.2/tags/",
-		url: "http://api.stackexchange.com/2.2/tags/" + tag + '/top-answerers/all_time?site=stackoverflow',
+		url: "//api.stackexchange.com/2.2/tags/" + tag + '/top-answerers/all_time?site=stackoverflow',
 		// data: request,
 		// data: tag + '/top-answerers/all_time/site=stackoverflow',
 		dataType: "jsonp",
